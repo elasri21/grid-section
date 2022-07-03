@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  background-color: #ecf2f8;
+}
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    align-content: center;
+  }
+  .container .page .person.one {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .container .page .person.two {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .container .page .person.three {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+  .container .page .person.four {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .container .page .person.five {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    height: auto;
+  }
+  .container .page .person {
+    margin-bottom: 20px;
+  }
+}
+.container .page {
+  padding: 40px;
+}
+.container .page .person {
+  border-radius: 5px;
+  padding: 10px;
+}
+.container .page .person.one {
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: #7541c8;
+}
+.container .page .person.two {
+  background-color: #19212e;
+}
+.container .page .person.three {
+  background-color: white;
+}
+.container .page .person.four {
+  background-color: white;
+}
+.container .page .person.five {
+  background-color: #19212e;
+}
+.container .page .person .info {
+  display: flex;
+  align-items: center;
+}
+.container .page .person .info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #cfcfcf;
+}
+.container .page .person .info .profile {
+  margin-left: 10px;
+}
+.container .page .person .info .profile .name {
+  font-size: 10px;
+  font-weight: 600;
+}
+.container .page .person .info .profile .name.white-text {
+  color: white;
+}
+.container .page .person .info .profile .name.dark-text {
+  color: #48556a;
+}
+.container .page .person .info .profile .status {
+  font-size: 8px;
+  font-weight: 500;
+}
+.container .page .person .info .profile .status.light-status {
+  color: white;
+  opacity: .5;
+}
+.container .page .person .info .profile .status.dark-status {
+  color: #48556a;
+  opacity: .5;
+}
+.container .page .person .disc {
+  margin-top: 10px;
+  padding: 0 10px 10px 10px;
+}
+.container .page .person .disc h3 {
+  margin-bottom: 10px;
+}
+.container .page .person .disc h3.light-title {
+  color: white;
+}
+.container .page .person .disc h3.dark-title {
+  color: #48556a;
+}
+.container .page .person .disc p {
+  font-size: 11px;
+}
+.container .page .person .disc p.light-desc {
+  color: white;
+  opacity: .7;
+}
+.container .page .person .disc p.dark-desc {
+  color: #48556a;
+  opacity: .7;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=main.css.map */
